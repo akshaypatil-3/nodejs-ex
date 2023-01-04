@@ -22,6 +22,12 @@ steps:
     openshiftService: 'os-conn'
     cmd: 'oc start-build nodejs-ex --follow'    
 - task: oc-cmd@2
+- task: DotNetCoreCLI@2
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+  inputs:
+    command: 'build'
   inputs:
     connectionType: 'OpenShift Connection Service'
     openshiftService: '- task: DotNetCoreCLI@2
