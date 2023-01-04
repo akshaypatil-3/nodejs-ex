@@ -24,5 +24,7 @@ steps:
 - task: oc-cmd@2
   inputs:
     connectionType: 'OpenShift Connection Service'
-    openshiftService: 'os-conn'
+    openshiftService: '- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
     cmd: 'oc status'
